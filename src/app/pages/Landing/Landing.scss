@@ -1,0 +1,305 @@
+/** @format */
+
+.start-top {
+  position: relative;
+  margin-top: -124px;
+}
+
+.about {
+  img {
+    max-width: 100%;
+  }
+  p {
+    font-size: 18px;
+    line-height: 34px;
+    font-weight: 300;
+  }
+}
+
+.contact-form {
+  form {
+    .input-row {
+      width: 100%;
+      margin-bottom: 20px;
+      input,
+      textarea,
+      .MuiInputBase-multiline {
+        background-color: #ffffff;
+        width: 100%;
+      }
+    }
+    .contact-radio-button {
+      .Mui-focused {
+        color: inherit !important;
+      }
+    }
+  }
+}
+
+.cta-section {
+  margin: 50px 0;
+  .cta {
+    background-image: url("/AppImages/cta.png");
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    padding: 0 30px;
+    margin: 170px 0;
+    border-radius: 10px;
+    .cta-content {
+      height: 330px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      p {
+        font-size: 18px;
+        font-weight: 300;
+      }
+      a {
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 50px;
+        color: #fff;
+      }
+    }
+
+    .cta-img {
+      position: relative;
+      .cta-img-1 {
+        max-width: 46%;
+        position: absolute;
+        left: 0;
+        top: 70px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          top: 40px;
+        }
+      }
+      .cta-img-2 {
+        max-width: 46%;
+        position: absolute;
+        right: 0;
+        top: -150px;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          top: -100px;
+        }
+      }
+    }
+  }
+}
+
+.policy-section {
+  padding-top: 100px;
+  margin-bottom: 40px;
+  .policy-section-container {
+    border: 1px solid #9ba4af;
+    background-color: #ffffff;
+    max-width: 100%;
+    position: fixed;
+    z-index: 3;
+    bottom: 0;
+    border-radius: 0px;
+    padding: 20px 15px;
+    p {
+      color: #666666;
+      line-height: 24px;
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .policy-btn {
+      margin-top: -30px;
+    }
+  }
+}
+
+//Responsive SCSS
+@media (min-width: 320px) and (max-width: 480px) {
+  .about {
+    .home-about-sec {
+      margin-top: -30px;
+      .primary-heading {
+        font-size: 40px;
+        margin-bottom: 0px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+  .contact-form {
+    .primary-heading {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+    .home-contact-option {
+      flex-direction: column;
+      button {
+        align-self: center;
+        margin-top: 20px;
+      }
+    }
+  }
+  .cta-section {
+    .cta {
+      margin-left: 0;
+      margin-bottom: 180px;
+      width: 100%;
+      .cta-content {
+        p {
+          font-size: 16px;
+        }
+        a {
+          font-size: 35px;
+          line-height: 40px;
+        }
+      }
+      .cta-img {
+        .cta-img-1 {
+          top: -80px;
+          &:hover {
+            top: -60px;
+          }
+        }
+        .cta-img-2 {
+          top: -450px;
+          &:hover {
+            top: -410px;
+          }
+        }
+      }
+    }
+  }
+  .policy-section {
+    .policy-section-container {
+      p {
+        font-size: 15px;
+        line-height: 26px;
+        text-align: center;
+      }
+      .policy-btn {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .about {
+    .home-about-sec {
+      margin-top: -30px;
+      .primary-heading {
+        font-size: 40px;
+        margin-bottom: 0px;
+      }
+      p {
+        font-size: 16px;
+        line-height: 28px;
+      }
+    }
+  }
+  .contact-form {
+    .primary-heading {
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+    .home-contact-option {
+      flex-direction: column;
+      button {
+        align-self: center;
+        margin-top: 20px;
+      }
+    }
+  }
+  .cta-section {
+    .cta {
+      margin-left: 0;
+      margin-bottom: 260px;
+      width: 100%;
+      .cta-content {
+        p {
+          font-size: 16px;
+        }
+        a {
+          font-size: 35px;
+          line-height: 40px;
+        }
+      }
+      .cta-img {
+        .cta-img-1 {
+          top: -80px;
+          &:hover {
+            top: -60px;
+          }
+        }
+        .cta-img-2 {
+          top: -500px;
+          &:hover {
+            top: -480px;
+          }
+        }
+      }
+    }
+  }
+
+  .policy-section {
+    .policy-section-container {
+      p {
+        font-size: 15px;
+        line-height: 26px;
+        text-align: center;
+      }
+      .policy-btn {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cta-section {
+    .cta {
+      margin-left: 0;
+      margin-bottom: 440px;
+      margin-top: 250px;
+      width: 100%;
+      .cta-content {
+        p {
+          font-size: 16px;
+        }
+        a {
+          font-size: 40px;
+          line-height: 40px;
+        }
+      }
+      .cta-img {
+        .cta-img-1 {
+          top: -80px;
+          &:hover {
+            top: -50px;
+          }
+        }
+        .cta-img-2 {
+          top: -550px;
+          &:hover {
+            top: -450px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1024px) and (max-width: 1250px) {
+  .cta-section {
+    .cta {
+      margin-bottom: 150px;
+      width: 100%;
+
+      .cta-img {
+        .cta-img-1 {
+          top: 100px;
+        }
+      }
+    }
+  }
+}
