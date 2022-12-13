@@ -19,7 +19,7 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
 import { Link } from "react-router-dom";
-import { Button, Box, Container } from "@mui/material";
+import { Button, Box, Container, Typography, Grid } from "@mui/material";
 const icons = [excel, cloud, e, azure, office, v, word, windows];
 const roundedIcon = [microsoft, roundAward, roundAzure];
 
@@ -41,6 +41,7 @@ const BannerSlider = () => {
 
   return (
     <div>
+
       <Slider className="slider" {...settings}>
         {[1, 2, 3].map((s) => (
           <div>
@@ -49,7 +50,13 @@ const BannerSlider = () => {
               style={{ backgroundImage: `url(${slidebg1})` }}
             >
 
-                <Box className="d-flex justify-content-center gap-15 mt-40 slider-btns">
+              
+              <Box className="d-flex justify-content-center align-items-center gap-15 slider-content">
+                <Typography variant={"h1"}>Cloud Service Portal</Typography>
+                <Typography variant={"h3"}>we make licensing simple</Typography>
+              </Box>
+              
+              <Box className="d-flex justify-content-center gap-15 mt-40 slider-btns">
                   <Button
                     className="btn-rounded btn-large slider-btn already-customer"
                     variant="contained"
