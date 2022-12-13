@@ -29,39 +29,32 @@
     }
   }
   .slider-slide {
-    min-height: 100vh;
+    min-height: 600px;
     width: 100%;
     background-size: cover;
     background-position: center;
-    .slider-rounded{
-      position: absolute;
-      left: 11.5%;
-      top: 60%;
-    }
-    
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7%;
     .slider-content{
-      position: absolute;
-      left: 7%;
-      top: 24%;
       flex-direction: column;
+
       h1{
         color: #EE7623;
         font-family: 'Raleway';
         font-weight: 600;
         text-shadow: 0 7px 5px rgb(0 0 0 / 05%);
+        font-size: 5.5rem;
       }
       h3{
         font-family: 'Raleway';
         letter-spacing: 2px;
-        font-weight: 300;
+        font-weight: 400;
+       font-size: 2.5rem;
       }
     }
-    .slider-btns{
-      position: absolute;
-      left: 11%;
-      top: 50%;
-    }
-    
     .rounded-box {
       border-radius: 50%;
       border: 1px solid #ffffff;
@@ -182,13 +175,6 @@
     }
   }
 }
-// @media (max-width: 767px) {
-//   .slider {
-//     .slick-dots {
-//       display: none !important;
-//     }
-//   }
-// }
 @media (min-width: 320px) and (max-width: 480px) {
   .slider {
     .slick-prev,
@@ -205,8 +191,18 @@
     }
     .slider-slide {
       text-align: center;
-      min-height: max-content;
+      // min-height: max-content;
       
+      .slider-content{
+        margin-top: 40%;
+      h1{
+        font-size: 3rem;
+      }
+      h3{
+       font-size: 1.5rem;
+      }
+    }
+
       .slider-btns {
         flex-direction: column;
         align-items: center;
@@ -263,7 +259,18 @@
     }
     .slider-slide {
       text-align: center;
-      min-height: max-content;
+      
+      
+      .slider-content{
+        margin-top: 20%;
+      h1{
+        font-size: 4.5rem;
+      }
+      h3{
+       font-size: 1.9rem;
+      }
+    }
+
       .slider-btns {
         button.slider-btn {
           width: max-content;
@@ -316,9 +323,17 @@
     }
     .slider-slide {
       text-align: center;
-      min-height: max-content;
+      // min-height: max-content;
 
-      
+      .slider-content{
+        margin-top: 15%;
+      h1{
+        font-size: 5rem;
+      }
+      h3{
+       font-size: 2rem;
+      }
+    }
       .slider-btns {
         button.slider-btn {
           width: max-content;
@@ -356,36 +371,16 @@
     .slider-slide {
       text-align: center;
 
-       .slider-rounded{
-      left: 10.5%;
-      top: 62%;
-    }
+       .slider-content{
 
-      .slider-content{
-      left: 5%;
-      top: 30%;
       h1{
-        font-size: 5.5rem;
+        font-size: 5rem;
       }
       h3{
-       font-size: 2.5rem;
+       font-size: 2rem;
       }
     }
-    .slider-btns{
-      left: 9%;
     }
-    }
-  }
-}
-
-@media (min-width: 1500px){
-  .slider {
     
-    .slider-slide {
-      .slider-content{
-      left: 9%;
-    
-    }
-    }
   }
 }

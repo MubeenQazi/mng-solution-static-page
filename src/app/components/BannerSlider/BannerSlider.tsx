@@ -51,7 +51,8 @@ const BannerSlider = () => {
             >
 
               
-              <Box className="d-flex justify-content-center align-items-center gap-15 slider-content">
+              <div className="d-flex justify-content-center align-items-center" style={{flexDirection: 'column'}}>
+                <Box className="d-flex justify-content-center align-items-center gap-10 slider-content">
                 <Typography variant={"h1"}>Cloud Service Portal</Typography>
                 <Typography variant={"h3"}>we make licensing simple</Typography>
               </Box>
@@ -83,6 +84,7 @@ const BannerSlider = () => {
                     </Box>
                   ))}
                 </div>
+              </div>
             </div>
           </div>
         ))}
