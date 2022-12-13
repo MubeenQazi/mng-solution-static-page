@@ -7,6 +7,7 @@ import cta2 from "../../../AppImages/cta2.png";
 import ListItem from '@mui/material/ListItem';
 import {Link} from "react-router-dom";
 import "./Landing.scss";
+import MessageApi from '../../api/messageApi';
 
 import {
   Container,
@@ -21,9 +22,19 @@ import {
   Box,
 } from "@mui/material";
 import about from "../../../AppImages/about.png";
-// const getCookieNotification = () => {
-//   return localStorage.getItem("cookies") ? true : false;
-// };
+
+
+
+
+const defaultValues:any = {
+  email: "",
+  phone: "",
+  subject: "",
+  message: "",
+  contact: "email",
+};
+
+
 const handleClick = () => {
   localStorage.setItem("cookies", JSON.stringify(true));
   const cookieAccept = localStorage.getItem("cookies");
@@ -35,9 +46,35 @@ const handleClick = () => {
     element.style.display = "none";
   }
 };
-const PublicLayout = () => (
+
+
+
+const PublicLayout = () => {
+  const [formValues, setFormValues] = React.useState(defaultValues);
+  const [formSubmit, setFormSubmit] = React.useState(false);
+
+  const handleInputChange = (e: any) => {
+    const { name, value }: any = e.target;
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e:any) => {
+    e.preventDefault();
+    setFormSubmit(true);
+  } 
+
+  
+
+  return (
   <div className="landing-page start-top">
-    <BannerSlider />
+      {
+        formSubmit && <MessageApi formData={formValues}  />
+      }
+      <BannerSlider />
+      
     <section className="about">
       <Container>
         <Grid container spacing={2} marginTop={10}>
@@ -64,21 +101,25 @@ const PublicLayout = () => (
       <Container>
         <h2 className="primary-heading">Send Us a Message</h2>
 
-        <form>
+        <form onSubmit={handleSubmit}>
           <FormControl className="input-row">
             <TextField
               fullWidth
               type="email"
+              name="email"
               label="Your email address"
               variant="outlined"
+              onChange={handleInputChange}
             />
           </FormControl>
           <FormControl className="input-row">
             <TextField
               fullWidth
               type="tel"
+              name="phone"
               label="Your phone number"
               variant="outlined"
+                onChange={handleInputChange}
             />
           </FormControl>
           <FormControl className="input-row">
@@ -87,16 +128,18 @@ const PublicLayout = () => (
               type="text"
               label="Subject"
               variant="outlined"
+              name="subject"
+                onChange={handleInputChange}
             />
           </FormControl>
           <FormControl className="input-row">
-            <TextField fullWidth label="Message" multiline rows={5} />
+            <TextField fullWidth label="Message" multiline rows={5} onChange={handleInputChange} name="mesage"/>
           </FormControl>
 
           <div className="home-contact-option d-flex justify-content-between mt-30">
             <FormControl className="contact-radio-button">
               <FormLabel>How would you like us to contact you?</FormLabel>
-              <RadioGroup row name="row-radio-buttons-group" defaultValue="email">
+              <RadioGroup row defaultValue="email" name="contact" onChange={handleInputChange}>
                 <FormControlLabel
                   value="email"
                   control={<Radio />}
@@ -109,7 +152,7 @@ const PublicLayout = () => (
                 />
               </RadioGroup>
             </FormControl>
-            <Button className="btn-rounded btn-mid" variant="contained">
+            <Button type="submit" className="btn-rounded btn-mid" variant="contained">
               Send Message
             </Button>
           </div>
@@ -166,6 +209,7 @@ const PublicLayout = () => (
       </Container>
     </section>
   </div>
-);
+)
+};
 
 export default PublicLayout;
