@@ -1,6 +1,6 @@
 import CookieNotification from "./Sections/CookieNotification/CookieNotification";
 import ContactSection from "./Sections/ContactUsSection/ContactSection";
-import ContactUsForm from "./Sections/ContactUsForm/ContactUsForm";
+import ContactUsForm from "../../submodule/components/ContactUsForm/ContactUsForm";
 import AboutUsSection from "./Sections/AboutUsSection/AboutUsSection";
 import BannerSection from "./Sections/BannerSection/BannerSection";
 import "./Landing.scss";
