@@ -1,0 +1,3 @@
+[submodule "mng-solution-shared"]
+	path = mng-solution-shared
+	url = https://github.com/MubeenQazi/mng-solution-shared.git
