@@ -10,7 +10,7 @@ import { useState } from "react";
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
 import { Link } from "react-router-dom";
-import {SubModComp} from "../../submodule/submoduleCompRefs";
+import MSButton from "../../submodule/components/MSButton/MSButton";
 
 export const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
@@ -109,10 +109,10 @@ export function CustomizedDialogs(validate: any) {
 
               {validate.validate ?
                 <Link to={'/'}>
-                  <SubModComp.Button text="Ok" />
+                  <MSButton text="Ok" />
                 </Link>
                 :
-                <SubModComp.Button text="Ok" clickAction={handleClose} />
+                <MSButton text="Ok" clickAction={handleClose} />
               }
             </div>
           </DialogContent>

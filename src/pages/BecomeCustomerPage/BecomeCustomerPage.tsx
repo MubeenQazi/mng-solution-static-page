@@ -15,8 +15,8 @@ import ListItem from "@mui/material/ListItem";
 import Footer from "../../components/Footer/Footer";
 import axios from 'axios';
 import "./BecomeCustomer.scss";
-import {SubModComp} from "../../submodule/submoduleCompRefs";
 import {AppImages} from "../../shared/images";
+import MSButton from "../../submodule/components/MSButton/MSButton";
 
 const { logo } = AppImages;
 
@@ -251,7 +251,7 @@ const BecomeCustomer = () => {
                   component={Link}
                   to={"/"}
                 >
-                  <SubModComp.Button
+                  <MSButton
                     text="Back"
                     backgroundColor="#9BA4AF"
                     icon={<ArrowBackIosIcon/>}

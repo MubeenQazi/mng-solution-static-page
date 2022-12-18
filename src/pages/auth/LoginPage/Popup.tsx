@@ -12,8 +12,8 @@ import {useState} from "react";
 import {Link} from "react-router-dom";
 import Button from "@mui/material/Button";
 import "./LoginPage.scss";
-import {SubModComp} from "../../../submodule/submoduleCompRefs";
 import {AppImages} from "../../../shared/images";
+import MSButton from "../../../submodule/components/MSButton/MSButton";
 
 const {loginPopupImage} = AppImages;
 
@@ -120,7 +120,7 @@ export function LogoutPopup() {
         <CheckCircleOutlineIcon className="success icon"/>
         <Typography variant="h4" className="popup-heading">Successfully Signed-Out</Typography>
         <Link to={'/login'}>
-          <SubModComp.Button text="Ok"/>
+          <MSButton text="Ok"/>
         </Link>
       </DialogContent>
       <DialogActions></DialogActions>

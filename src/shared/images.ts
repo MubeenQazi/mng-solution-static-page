@@ -1,4 +1,4 @@
-import {SubModUtils} from "../submodule/submoduleRefs";
+import {getImageProxy} from "../submodule/utils/utils";
 
 const basePath = `${process.env.PUBLIC_URL}/images`;
 
@@ -25,4 +25,4 @@ const AppImagesPaths = {
   img404: "img-404.png",
 }
 
-export const AppImages = SubModUtils.getImageProxy(basePath, AppImagesPaths);
+export const AppImages = getImageProxy(basePath, AppImagesPaths);

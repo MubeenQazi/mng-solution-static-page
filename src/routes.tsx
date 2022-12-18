@@ -7,13 +7,13 @@ import PrivacyPolicyPage from "./pages/PrivacyPolicyPage/PrivacyPolicyPage";
 import BecomeCustomerPage from "./pages/BecomeCustomerPage/BecomeCustomerPage";
 import TermsConditionsPage from "./pages/TermsConditionsPage/TermsConditionsPage";
 import LoginPage from "./pages/auth/LoginPage/LoginPage";
-import {SubModPages} from "./submodule/submoduleCompRefs";
+import NotfoundPage from "./submodule/pages/NotFoundPage/NotfoundPage";
 
 const Routes = () => {
   return (
     <BrowserRouter>
       <Router>
-        <Route path='*' element={<SubModPages.NotfoundPage />} />
+        <Route path='*' element={<NotfoundPage />} />
         <Route path="/" element={<Layout />}>
           <Route path="" element={<LandingPage />} />
         </Route>
