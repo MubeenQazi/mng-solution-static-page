@@ -7,11 +7,11 @@ import DialogContent from "@mui/material/DialogContent";
 import IconButton from "@mui/material/IconButton";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { useState } from "react";
-import MSButton from "../Button/Button";
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import HighlightOffIcon from '@mui/icons-material/HighlightOff';
-
 import { Link } from "react-router-dom";
+import {SubModComp} from "../../submodule/submoduleCompRefs";
+
 export const BootstrapDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiDialogContent-root": {
     padding: theme.spacing(2),
@@ -109,10 +109,10 @@ export function CustomizedDialogs(validate: any) {
 
               {validate.validate ?
                 <Link to={'/'}>
-                  <MSButton text="Ok" />
+                  <SubModComp.Button text="Ok" />
                 </Link>
                 :
-                <MSButton text="Ok" clickAction={handleClose} />
+                <SubModComp.Button text="Ok" clickAction={handleClose} />
               }
             </div>
           </DialogContent>

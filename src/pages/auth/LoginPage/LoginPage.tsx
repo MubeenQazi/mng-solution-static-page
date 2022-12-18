@@ -4,8 +4,8 @@ import LockIcon from "@mui/icons-material/Lock";
 import Footer from "../../../components/Footer/Footer";
 import { LogoutPopup, CustomizedDialogs } from "./Popup";
 import { useSearchParams } from "react-router-dom";
-import {AppImages} from "../../../shared/images";
 import "./LoginPage.scss";
+import {AppImages} from "../../../shared/images";
 
 const { microsoft, logo } = AppImages;
 

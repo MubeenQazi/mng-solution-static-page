@@ -10,9 +10,9 @@ import Typography from "@mui/material/Typography";
 import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 import {useState} from "react";
 import {Link} from "react-router-dom";
-import MSButton from "../../../components/Button/Button";
 import Button from "@mui/material/Button";
 import "./LoginPage.scss";
+import {SubModComp} from "../../../submodule/submoduleCompRefs";
 import {AppImages} from "../../../shared/images";
 
 const {loginPopupImage} = AppImages;
@@ -120,7 +120,7 @@ export function LogoutPopup() {
         <CheckCircleOutlineIcon className="success icon"/>
         <Typography variant="h4" className="popup-heading">Successfully Signed-Out</Typography>
         <Link to={'/login'}>
-          <MSButton text="Ok"/>
+          <SubModComp.Button text="Ok"/>
         </Link>
       </DialogContent>
       <DialogActions></DialogActions>
