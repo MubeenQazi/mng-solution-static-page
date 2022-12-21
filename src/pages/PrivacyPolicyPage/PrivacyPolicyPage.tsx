@@ -6,7 +6,7 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { useNavigate } from "react-router-dom";
 import "../../shared/styles/policies.scss";
 import { AppImages } from "../../shared/images";
-import "./Arcive.scss";
+import "./Archive.scss";
 
 const { logo } = AppImages;
 

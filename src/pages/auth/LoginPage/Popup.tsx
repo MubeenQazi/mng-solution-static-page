@@ -16,7 +16,6 @@ import Button from "@mui/material/Button";
 import "./LoginPage.scss";
 import { AppImages } from "../../../shared/images";
 import MSButton from "../../../submodule/components/MSButton/MSButton";
-
 const { loginPopupImage } = AppImages;
 
 export const BootstrapDialog = styled(Dialog)(({ theme }) => ({
@@ -83,10 +82,7 @@ export function CustomizedDialogs() {
           onClose={handleClose}
         />
         <DialogContent className="popup-content d-flex justify-content-center align-items-center">
-          <img
-            src={require("../../../../AppImages/LoginPopUpImg.png")}
-            alt="popup"
-          />
+          <img src={loginPopupImage} alt="popup" />
           <Typography className="popup-details">
             <p>
               If you're having trouble logging in, we can help. Please contact

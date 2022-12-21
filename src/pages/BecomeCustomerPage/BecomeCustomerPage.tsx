@@ -96,10 +96,7 @@ const BecomeCustomer = () => {
     >
       <Grid item>
         <div className="become-customer">
-          <img
-            className="customer-logo"
-            src={require("../../../AppImages/logo.png")}
-          />
+          <img className="customer-logo" src={logo} />
           <form className="customerForm" onSubmit={handleSubmit}>
             <h1 className="customer-heading">
               <b>Become a Customer</b>

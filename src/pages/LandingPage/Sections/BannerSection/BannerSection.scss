@@ -39,25 +39,22 @@
     justify-content: center;
     align-items: center;
     padding-top: 7%;
-<<<<<<< HEAD:src/app/components/BannerSlider/BannerSlider.scss
-=======
     flex-direction: column;
->>>>>>> 5f31484dbeb8c92a0de54b81fe5cd81d38c6b245:src/pages/LandingPage/Sections/BannerSection/BannerSection.scss
-    .slider-content{
+    .slider-content {
       flex-direction: column;
 
-      h1{
-        color: #EE7623;
-        font-family: 'Raleway';
+      h1 {
+        color: #ee7623;
+        font-family: "Raleway";
         font-weight: 600;
         text-shadow: 0 7px 5px rgb(0 0 0 / 05%);
         font-size: 5.5rem;
       }
-      h3{
-        font-family: 'Raleway';
+      h3 {
+        font-family: "Raleway";
         letter-spacing: 2px;
         font-weight: 400;
-       font-size: 2.5rem;
+        font-size: 2.5rem;
       }
     }
     .rounded-box {
@@ -78,7 +75,7 @@
         border-color: $primary-color;
       }
     }
-    
+
     .slide-container {
       padding-top: 155px;
       padding-bottom: 60px;
@@ -101,7 +98,7 @@
           background-color: #333333;
         }
       }
-      
+
       blockquote {
         color: #ffffff;
         font-size: 28px;
@@ -197,16 +194,16 @@
     .slider-slide {
       text-align: center;
       // min-height: max-content;
-      
-      .slider-content{
+
+      .slider-content {
         margin-top: 40%;
-      h1{
-        font-size: 3rem;
+        h1 {
+          font-size: 3rem;
+        }
+        h3 {
+          font-size: 1.5rem;
+        }
       }
-      h3{
-       font-size: 1.5rem;
-      }
-    }
 
       .slider-btns {
         flex-direction: column;
@@ -249,7 +246,7 @@
           font-size: 20px;
           line-height: 30px;
           margin-bottom: -20px;
-        } 
+        }
       }
     }
   }
@@ -265,17 +262,16 @@
     }
     .slider-slide {
       text-align: center;
-      
-      
-      .slider-content{
+
+      .slider-content {
         margin-top: 20%;
-      h1{
-        font-size: 4.5rem;
+        h1 {
+          font-size: 4.5rem;
+        }
+        h3 {
+          font-size: 1.9rem;
+        }
       }
-      h3{
-       font-size: 1.9rem;
-      }
-    }
 
       .slider-btns {
         button.slider-btn {
@@ -332,15 +328,15 @@
       text-align: center;
       // min-height: max-content;
 
-      .slider-content{
+      .slider-content {
         margin-top: 15%;
-      h1{
-        font-size: 5rem;
+        h1 {
+          font-size: 5rem;
+        }
+        h3 {
+          font-size: 2rem;
+        }
       }
-      h3{
-       font-size: 2rem;
-      }
-    }
       .slider-btns {
         button.slider-btn {
           width: max-content;
@@ -378,20 +374,15 @@
     .slider-slide {
       text-align: center;
 
-       .slider-content{
-<<<<<<< HEAD:src/app/components/BannerSlider/BannerSlider.scss
-
-=======
+      .slider-content {
         margin-top: 5%;
->>>>>>> 5f31484dbeb8c92a0de54b81fe5cd81d38c6b245:src/pages/LandingPage/Sections/BannerSection/BannerSection.scss
-      h1{
-        font-size: 5rem;
-      }
-      h3{
-       font-size: 2rem;
+        h1 {
+          font-size: 5rem;
+        }
+        h3 {
+          font-size: 2rem;
+        }
       }
     }
-    }
-    
   }
 }
