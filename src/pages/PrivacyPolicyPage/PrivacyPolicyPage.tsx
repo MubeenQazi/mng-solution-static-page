@@ -1,9 +1,12 @@
+/** @format */
+
 import { Button, Grid, Typography } from "@mui/material";
 import React from "react";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import { useNavigate } from "react-router-dom";
 import "../../shared/styles/policies.scss";
-import {AppImages} from "../../shared/images";
+import { AppImages } from "../../shared/images";
+import "./Arcive.scss";
 
 const { logo } = AppImages;
 
@@ -15,11 +18,7 @@ const PrivacyPolicyPage = () => {
   return (
     <Grid className="archive">
       <Grid item className="archive-top-sec">
-        <img
-          className="app-logo"
-          src={logo}
-          alt="logo"
-        />
+        <img className="app-logo" src={logo} alt="logo" />
       </Grid>
       <Grid item className="archive-head">
         <Button className="back-btn" onClick={handleBack}>
