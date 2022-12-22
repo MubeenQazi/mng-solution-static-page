@@ -3,23 +3,29 @@
 import React from "react";
 import "./BannerSlider.scss";
 import Slider from "react-slick";
-import slidebg1 from "../../../AppImages/banner/slide-bg-2.png";
-import excel from "../../../AppImages/banner/excel.png";
-import cloud from "../../../AppImages/banner/cloud.png";
-import e from "../../../AppImages/banner/e.png";
-import azure from "../../../AppImages/banner/azure.png";
-import office from "../../../AppImages/banner/office.png";
-import v from "../../../AppImages/banner/v.png";
-import word from "../../../AppImages/banner/word.png";
-import microsoft from "../../../AppImages/banner/round-microsoft.png";
-import roundAward from "../../../AppImages/banner/round-award.png";
-import roundAzure from "../../../AppImages/banner/round-azure.png";
-import windows from "../../../AppImages/banner/windows.png";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import ListItem from "@mui/material/ListItem";
 import { Link } from "react-router-dom";
-import { Button, Box, Container, Typography, Grid } from "@mui/material";
+import { Button, Box, Typography } from "@mui/material";
+
+import { AppImages } from "../../../shared/images";
+
+const {
+  excel,
+  cloud,
+  e,
+  azure,
+  office,
+  v,
+  word,
+  windows,
+  microsoft,
+  roundAward,
+  roundAzure,
+  slidebg1,
+} = AppImages;
+
 const icons = [excel, cloud, e, azure, office, v, word, windows];
 const roundedIcon = [microsoft, roundAward, roundAzure];
 
@@ -41,7 +47,6 @@ const BannerSlider = () => {
 
   return (
     <div>
-
       <Slider className="slider" {...settings}>
         {[1, 2, 3].map((s) => (
           <div>
@@ -49,15 +54,18 @@ const BannerSlider = () => {
               className="slider-slide"
               style={{ backgroundImage: `url(${slidebg1})` }}
             >
-
-              
-              <div className="d-flex justify-content-center align-items-center" style={{flexDirection: 'column'}}>
+              <div
+                className="d-flex justify-content-center align-items-center"
+                style={{ flexDirection: "column" }}
+              >
                 <Box className="d-flex justify-content-center align-items-center gap-10 slider-content">
-                <Typography variant={"h1"}>Cloud Service Portal</Typography>
-                <Typography variant={"h3"}>we make licensing simple</Typography>
-              </Box>
-              
-              <Box className="d-flex justify-content-center gap-15 mt-40 slider-btns">
+                  <Typography variant={"h1"}>Cloud Service Portal</Typography>
+                  <Typography variant={"h3"}>
+                    we make licensing simple
+                  </Typography>
+                </Box>
+
+                <Box className="d-flex justify-content-center gap-15 mt-40 slider-btns">
                   <Button
                     className="btn-rounded btn-large slider-btn already-customer"
                     variant="contained"
